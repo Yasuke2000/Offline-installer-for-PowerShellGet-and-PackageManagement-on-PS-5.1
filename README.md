@@ -1,6 +1,22 @@
 # Offline-installer-for-PowerShellGet-and-PackageManagement-on-PS-5.1
 
 
+Description
+
+Install-PSModulesOffline.ps1 is a PowerShell script designed to facilitate the offline installation of the PowerShellGet and PackageManagement modules for Windows PowerShell 5.1. It automates the following tasks:
+
+Cleanup: Removes any existing user-scoped installations of PowerShellGet and PackageManagement from the %USERPROFILE%\Documents\WindowsPowerShell\Modules directory.
+
+Extraction: Unpacks the PowerShellGet module from a pre-downloaded .nupkg file.
+
+Copy: Copies the PackageManagement module from a local offline repository (C:\Temp\OfflineModules).
+
+Repository Registration (optional): Registers the offline folder as a file-based PSRepository for future Install-Module operations.
+
+Verification: Lists available versions of both modules to confirm successful installation.
+
+This script enables administrators to prepare and deploy PowerShell module dependencies in environments without internet connectivity.
+
 Prerequisites
 
 Windows PowerShell 5.1
